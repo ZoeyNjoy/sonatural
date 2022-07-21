@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&family=Roboto:wght@100;400;700&display=swap');
+
+*{  margin: 0; padding: 0;}
+ul{ list-style: none;}
+a{  text-decoration: none;}
+body{font-size: .7vw;}
+header{
+    width: 100%;
+}
+header .title{
+    width: 75%;
+    margin: auto;
+    position: relative;
+}
+.title .logo{
+    width: 15%;
+    margin: auto;
+}
+.title .lnb{
+    width: 30%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font: 400 1.5em/2.5em 'Roboto', 'Noto Sans KR', sans-serif;
+}
+.lnb ul{
+    display: flex;
+}
+.lnb li{
+    width: 25%;
+    margin-right: 1%;
+    text-align: center;
+}
+.lnb a{
+    color: #333;
+}
+.title .cart{
+    position: absolute;
+    right: 0;
+    top: 65%;
+    transform: translateY(-50%);
+    width: 40px;
+}
+.title #search{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 300px;
+    height: 2em;
+    border-radius: 20px;
+    padding: 0 10px 0 10px;
+    border: 1px solid #aaa;
+}
+
+
+/* nav */
+nav{
+    width: 100%;
+    margin: auto;
+    background-color: #fff;
+    z-index: 10;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #aaa;
+}
+nav::before{
+    content: '';
+    display: block;
+    margin-top: 5%;
+}
+nav ul{
+    width: 75%;
+    margin: auto;
+    line-height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+nav li{
+    width: 13%;
+    text-transform: uppercase;
+    font: bold 1.5em/4em 'Roboto', 'Noto Sans KR', sans-serif;
+}
+nav li:nth-child(3) a{
+    color: #ff004e;
+}
+nav a{
+    color: #333;
+}
+
+/* 슬라이드 */
+.slide_wrap{
+    width: 100%;
+    margin-bottom: 30%;
+    position: relative;
+    z-index: 1;
+}
+.slide_wrap .slide{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.slide_wrap .slide .dot{
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(50%);
+    border: 1px solid red;
+}
+.slide a{
+    width: 100%;
+    position: absolute;
+    color: inherit;
+}
+.slide .txt{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+}
+.txt p:nth-child(1){
+    font: 400 4em/1.2em 'Roboto', 'Noto Sans KR', sans-serif;
+}
+.txt p:nth-child(2){
+    font: 100 2em/1.2em 'Roboto', 'Noto Sans KR', sans-serif;
+}
+.slide a img{
+    width: 85%;
+    margin: auto;
+    display: block;
+}
+
+
+
+/* 메인페이지 */
+main{
+    width: 100%;
+    margin: auto;
+}
+main .best{
+    width: 100%;
+    margin: auto;
+}
+.best .contents{
+    width: 100%;
+}
+.contents .row1,
+.contents .row2{
+    width: 80%;
+    margin: 20px auto;
+}
+.row1 ul,
+.row2 ul{
+    display: flex;
+    justify-content: space-between;
+}
+.row1 li,
+.row2 li{
+    width: 24%;
+    position: relative;
+}
+.row1 li img,
+.row2 li img{
+    width: 100%
+}
+.row1 a,
+.row2 a{
+    color:#333;
+}
+.contents .sub_title{
+    font: 400 1.3em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
+    color: #ccc;
+}
+.contents .title{
+    font: 400 1.8em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
+}
+.contents .price{
+    font: 400 1.5em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
+}
+.row1 .badge,
+.row2 .badge{
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+    font: 400 1.5em/3.5em 'Roboto', 'Noto Sans KR', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+.badge:nth-of-type(1){
+    background-color: #333;
+    border: 1px solid #333;
+    position: absolute;
+    top: 1%;
+    color: #ddd;
+}
+.badge:nth-of-type(2){
+    border: 1px solid #ddd;
+    background-color: #fff;
+    position: absolute;
+    top: 20%;
+    color: #aaa;
+}
+
+
+main .event{
+    width: 100%;
+    margin-top: 100px;
+    z-index: 1;
+}
+.event ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.event li{
+    width: 50%;
+    position: relative;
+}
+.event img{
+    width: 100%;
+    height: 100%;
+}
+.event a{
+    color: inherit;
+}
+.event .text{
+    width: 50%;
+    position: absolute;
+    top: 5%;
+    left: 2%;
+}
+.event .sub_title{
+    font: 400 1.5em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
+    color: #888;
+}
+.event .title{
+    font: 400 2.5em/2em 'Roboto', 'Noto Sans KR', sans-serif;
+}
+.event p:nth-child(3){
+    margin-top: 10%;
+    font: 400 1.5em/2em 'Roboto', 'Noto Sans KR', sans-serif;
+}
+
+footer{
+    width: 100%;
+    border-top: 1px solid #ddd;
+}
+footer .community{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-top: 2%;
+}
+.community .cs{
+    width: 33%;
+}
+.cs p:nth-child(1){
+    font: 400 3em/2em 'Roboto', 'Noto Sans KR', sans-serif;
+}
+.cs p:nth-child(2){
+    font: 400 4em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
+}
+.cs p:nth-child(3){
+    margin-top: 5%;
+    font: 100 2em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cs p:nth-child(3) span{
+    display: block;
+    width: 40%;
+}
+.community .noti{
+    width: 40%;
+}
+.noti ul{
+    width: 100%;
+}
+.noti p:nth-child(1){
+    font: 400 3em/2em 'Roboto', 'Noto Sans KR', sans-serif;
+}
+.noti li{
+    font: 100 2em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
+    display: flex;
+}
+.noti li span{
+    display: block;
+    width: 15%;
+}
+.community .benefit{
+    width: 25%;
+}
+.benefit ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.benefit li{
+    width: 50%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.benefit li a{
+    color: inherit;
+}
+.benefit li img{
+    width: 60%;
+}
+.benefit li p{
+    font: 100 1.3em/2em 'Roboto', 'Noto Sans KR', sans-serif;    
+}
