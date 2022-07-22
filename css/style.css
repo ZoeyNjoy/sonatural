@@ -112,25 +112,22 @@ nav a{
     color: #333;
 }
 
+
 /* 슬라이드 */
 .slide_wrap{
     width: 100%;
-    margin-bottom: 30%;
     position: relative;
     z-index: 1;
+}
+.slide_wrap .slide::before{
+    content: '';
+    display: block;
+    margin-top: 25%;
 }
 .slide_wrap .slide{
     width: 100%;
     display: flex;
     position: relative;
-}
-.slide_wrap .slide .dot{
-    z-index: 2;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(50%);
-    border: 1px solid red;
 }
 .slide a{
     width: 100%;
@@ -154,8 +151,33 @@ nav a{
     margin: auto;
     display: block;
 }
-
-
+.slide_wrap .control{
+    width: 100%;
+    position: absolute;
+    bottom: 13%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+.control ul{
+    width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.control li{
+    width: 15px;
+    height: 10px;
+    background:url(../images/off.svg) center/cover;
+    filter: drop-shadow(2px 1px 2px rgba(51, 51, 51, 0.5));
+    transition: all .5s ease-in-out;
+}
+.control li:first-child{
+    width: 35px;
+    height: 10px;
+    background:url(../images/on.svg) center/cover;
+    filter: drop-shadow(2px 1px 2px rgba(51, 51, 51, 0.5));
+}
 
 /* 메인페이지 */
 main{
@@ -303,7 +325,11 @@ main .aside{
     width: 100%;
     text-align: right;
     color: inherit;
-    font: 100 2em/1em 'Roboto', 'Noto Sans KR', sans-serif;    
+    font: 100 2em/1em 'Roboto', 'Noto Sans KR', sans-serif;
+    transition: all .3s ease-in-out; 
+}
+.aside a:hover{
+    color: #ff004e;
 }
 
 
