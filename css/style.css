@@ -352,16 +352,17 @@ footer .community{
 .cs p:nth-child(1){
     font: 400 2.5em/2em 'Roboto', 'Noto Sans KR', sans-serif;
 }
-.cs p:nth-child(2){
+.cs p:nth-child(2),
+.cs p:nth-child(3){
     font: 400 3.5em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
 }
-.cs p:nth-child(3){
+.cs p:nth-child(4){
     margin-top: 5%;
     font: 100 2em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
     display: flex;
     flex-wrap: wrap;
 }
-.cs p:nth-child(3) span{
+.cs p:nth-child(4) span{
     display: block;
     width: 40%;
 }

@@ -97,36 +97,135 @@ main .event{
 
 main .aside{
     width: 100%;
-    margin: auto;
 }
 .aside p:nth-child(1){
     padding-left: 5%;
-    font: 400 3.5em/2em 'Roboto', 'Noto Sans KR', sans-serif;    
+    font: 400 5em/2em 'Roboto', 'Noto Sans KR', sans-serif;
 }
 .aside ul{
     width: 100%;
-    display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 1%;
+    margin-top: 3%;
 }
 .aside li{
     width: 100%;
+    margin-bottom: 3%;
+}
+.aside li:last-child{
+    margin-bottom: 0%;
 }
 .aside li p:first-child{
-    font: 100 2em/2em 'Roboto', 'Noto Sans KR', sans-serif;    
+    font: 100 3.5em/2em 'Roboto', 'Noto Sans KR', sans-serif;    
 }
 .aside li:first-child{
-    margin-right: 1%;
+    margin-right: 0;
 }
 .aside iframe{
-    width: 100%;
-    height: 270px;
+    height: 200px;
 }
 .aside a{
-    display: block;
+    width: 98%;
+    font: 100 3.5em/3em 'Roboto', 'Noto Sans KR', sans-serif;    
+}
+
+
+footer{
     width: 100%;
-    text-align: right;
-    color: inherit;
-    font: 100 2em/1em 'Roboto', 'Noto Sans KR', sans-serif;    
+    border-top: 1px solid #ddd;
+    margin-top: 5%;
+}
+footer .community{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+.community .cs{
+    width: 100%;
+}
+.cs p:nth-child(1){
+    font: 400 5em/2em 'Roboto', 'Noto Sans KR', sans-serif;
+}
+.cs p:nth-child(2),
+.cs p:nth-child(3){
+    float: left;
+    font: 400 8em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
+    margin-right: 15%;
+}
+.cs p:nth-child(4){
+    clear: both;
+    font: 100 3em/2em 'Roboto', 'Noto Sans KR', sans-serif;
+    margin-bottom: 5%;
+}
+.cs p:nth-child(4) span{
+    display: block;
+    width: 20%;
+}
+.cs p:nth-child(4) span:nth-child(3){
+    margin-left: 13%;
+}
+
+.community .noti{
+    display: none;
+}
+
+.community .benefit{
+    width: 100%;
+}
+.benefit li{
+    width: 25%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.support ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.support li:not(li:last-child)::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: -7px;
+    width: 1px;
+    height: 15px;
+    background-color: #eee;
+}
+.support li:nth-child(1){
+    width: 20%;
+}
+.support li:nth-child(2),
+.support li:nth-child(3),
+.support li:nth-child(5){
+    width: 15%;
+}
+.support li:nth-child(4){
+    width: 25%;
+}
+
+.info ul{
+    width: 100%;
+    margin-top: 3%;
+}
+.info li{
+    color: #eee;
+    font: 100 0.1em 'Roboto', 'Noto Sans KR', sans-serif;        
+}
+.info a{
+    color: #eee;
+    font-weight: 400;
+    margin-left: 5px;
+}
+.info span{
+    margin-right: 1%;
+}
+.component .copy{
+    width: 100%;
+    margin: auto;
+    font: 100 1.5em/2em 'Roboto', 'Noto Sans KR', sans-serif;
+    letter-spacing: 1px;
+    margin-top: 3%;
+    color: #eee;
 }
