@@ -4,6 +4,8 @@
 ul{ list-style: none;}
 a{  text-decoration: none;}
 body{font-size: .7vw;}
+
+
 header{
     width: 100%;
 }
@@ -39,17 +41,37 @@ header .title{
     right: 0;
     top: 65%;
     transform: translateY(-50%);
-    width: 40px;
+    width: 4%;
+}
+.title .search{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    width: 20%;
+    height: 35%;
 }
 .title #search{
     position: absolute;
-    top: 100%;
-    right: 0;
-    width: 300px;
-    height: 2em;
-    border-radius: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 95%;
+    height: 70%;
     padding: 0 10px 0 10px;
-    border: 1px solid #aaa;
+    border: none;
+    border-bottom: 1px solid #333;
+}
+#search:focus{outline: none;}
+#search::-webkit-search-cancel-button{display: none;}
+.search .s_btn{
+    width: 15%;
+    height: 55%;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background: url(../images/search.svg) center/cover;
+    border: none;
 }
 
 
@@ -244,24 +266,68 @@ main .event{
     font: 400 1.5em/2em 'Roboto', 'Noto Sans KR', sans-serif;
 }
 
+
+main .aside{
+    width: 80%;
+    margin: auto;
+}
+.aside::before{
+    content: '';
+    display: block;
+    margin-top: 5%;
+}
+.aside p{
+    font: 400 2.5em/2em 'Roboto', 'Noto Sans KR', sans-serif;    
+}
+.aside ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+.aside li{
+    width: 50%;
+}
+.aside li p:first-child{
+    font: 100 2em/2em 'Roboto', 'Noto Sans KR', sans-serif;    
+}
+.aside li:first-child{
+    margin-right: 1%;
+}
+.aside iframe{
+    width: 100%;
+    height: 270px;
+}
+.aside a{
+    display: block;
+    width: 100%;
+    text-align: right;
+    color: inherit;
+    font: 100 2em/1em 'Roboto', 'Noto Sans KR', sans-serif;    
+}
+
+
+
+/* 푸터영역 */
 footer{
     width: 100%;
     border-top: 1px solid #ddd;
+    margin-top: 5%;
 }
 footer .community{
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: flex;
     margin-top: 2%;
 }
 .community .cs{
-    width: 33%;
+    width: 30%;
 }
 .cs p:nth-child(1){
-    font: 400 3em/2em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 2.5em/2em 'Roboto', 'Noto Sans KR', sans-serif;
 }
 .cs p:nth-child(2){
-    font: 400 4em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 3.5em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
 }
 .cs p:nth-child(3){
     margin-top: 5%;
@@ -280,7 +346,7 @@ footer .community{
     width: 100%;
 }
 .noti p:nth-child(1){
-    font: 400 3em/2em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 2.5em/2em 'Roboto', 'Noto Sans KR', sans-serif;
 }
 .noti li{
     font: 100 2em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
@@ -288,10 +354,10 @@ footer .community{
 }
 .noti li span{
     display: block;
-    width: 15%;
+    width: 10%;
 }
 .community .benefit{
-    width: 25%;
+    width: 35%;
 }
 .benefit ul{
     width: 100%;
@@ -307,8 +373,70 @@ footer .community{
     color: inherit;
 }
 .benefit li img{
-    width: 60%;
+    width: 40%;
 }
 .benefit li p{
     font: 100 1.3em/2em 'Roboto', 'Noto Sans KR', sans-serif;    
+}
+footer .component{
+    width: 100%;
+    margin-top: 1%;
+    padding: 3%;
+    background:#c7dea4;
+    box-sizing: border-box;
+}
+.support ul{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.support li{
+    text-align: center;
+    position: relative;
+}
+.support li:not(li:last-child)::before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: -7px;
+    width: 1px;
+    height: 15px;
+    background-color: #333;
+}
+.support li:nth-child(1){
+    width: 20%;
+}
+.support li:nth-child(2),
+.support li:nth-child(3),
+.support li:nth-child(5){
+    width: 15%;
+}
+.support li:nth-child(4){
+    width: 25%;
+}
+.support li a{
+    color: inherit;
+    font: 100 1.5em/2em 'Roboto', 'Noto Sans KR', sans-serif;    
+}
+.info ul{
+    width: 100%;
+    margin-top: 3%;
+}
+.info li{
+    font: 100 1.5em/2em 'Roboto', 'Noto Sans KR', sans-serif;        
+}
+.info a{
+    color: inherit;
+    font-weight: 400;
+    margin-left: 5px;
+}
+.info span{
+    margin-right: 2%;
+}
+.component .copy{
+    width: 100%;
+    margin: auto;
+    font: 100 1.5em/2em 'Roboto', 'Noto Sans KR', sans-serif;
+    letter-spacing: 1px;
+    margin-top: 3%;
 }

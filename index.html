@@ -15,7 +15,7 @@
     <header>
         <div class="title">
             <div class="logo">
-                <img src="./images/logo.svg" alt="로고">
+                <a href="#"><img src="./images/logo.svg" alt="로고"></a>
             </div>
             <div class="lnb">
                 <ul>
@@ -25,8 +25,11 @@
                     <li><a href="#">마이페이지</a></li>
                 </ul>
             </div>
-            <img src="./images/shopping.png" alt="장바구니" class="cart">
-            <input type="search" name="search" id="search">
+            <img src="./images/cart.svg" alt="장바구니" class="cart">
+            <div class="search">
+                <button class="s_btn"></button>
+                <input type="search" name="search" id="search" placeholder="검색어를 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='검색어를 입력하세요.'">
+            </div>
         </div>
     </header>
     <nav>
@@ -273,9 +276,22 @@
                     </a>
                 </li>
             </ul>
-            <div class="banner">
-
-            </div>
+        </div>
+        <div class="aside">
+            <p>LIVE CONTENTS</p>
+            <ul>
+                <li>
+                    <p>캑터스 워터 셔벗 크림</p>
+                    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/2SxMJmJnCBw"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+                </li>
+                <li>
+                    <p>올데이 타이트 메이크업 픽서</p>
+                    <p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/PmT1r3ESmsk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </p>
+                </li>
+            </ul>
+            <a href="https://www.youtube.com/channel/UCTqY_zakM6OHJgtF3zwCQvg/featured">공식 youtube 가기</a>
         </div>
     </main>
     <footer>
@@ -331,7 +347,38 @@
                 </ul>
             </div>
         </div>
-        <div class="bottom"></div>
+        <div class="component">
+            <div class="support">
+                <ul>
+                    <li><a href="#">쏘내추럴 소개</a></li>
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">회사위치</a></li>
+                </ul>
+            </div>
+            <div class="info">
+                <ul>
+                    <li>
+                        <span>쏘내추럴(주)</span>
+                        <span>서울시 강남구 논현로 140길 5 쏘내추럴빌딩 (논현동 74 - 26)</span>
+                        <span>대표이사 조주호</span>
+                        <span>개인정보보호책임자 김옥경</span>
+                    </li>
+                    <li>
+                        <span>사업자등록번호 261 - 81 - 21889</span>
+                        <span>통신판매업신고 제2014 - 서울강남 - 03442호</span>
+                        <span>제품 상담 및 배송 문의 02 - 573 - 6769</span>
+                    </li>
+                    <li>
+                        <span>고객문의<a href="#">help@sonatural.co.kr</a></span>
+                        <span>제휴 마케팅 문의<a href="#">pr_mkt@sonatural.co.kr</a></span>
+                        <span><a href="#">쇼룸 방문 구매시 추가 혜택  ≫</a></span>
+                    </li>
+                </ul>
+            </div>
+            <p class="copy">COPYRIGHT Ⓒ SONATURAL.CO.KR ALL RIGHT RESERVERD.</p>
+        </div>
     </footer>
 </body>
 </html>
