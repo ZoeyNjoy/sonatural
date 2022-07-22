@@ -382,7 +382,7 @@ footer .component{
     width: 100%;
     margin-top: 1%;
     padding: 3%;
-    background:#c7dea4;
+    background:#333;
     box-sizing: border-box;
 }
 .support ul{
@@ -401,7 +401,7 @@ footer .component{
     right: -7px;
     width: 1px;
     height: 15px;
-    background-color: #333;
+    background-color: #eee;
 }
 .support li:nth-child(1){
     width: 20%;
@@ -415,7 +415,7 @@ footer .component{
     width: 25%;
 }
 .support li a{
-    color: inherit;
+    color: #eee;
     font: 100 1.5em/2em 'Roboto', 'Noto Sans KR', sans-serif;    
 }
 .info ul{
@@ -423,10 +423,11 @@ footer .component{
     margin-top: 3%;
 }
 .info li{
+    color: #eee;
     font: 100 1.5em/2em 'Roboto', 'Noto Sans KR', sans-serif;        
 }
 .info a{
-    color: inherit;
+    color: #eee;
     font-weight: 400;
     margin-left: 5px;
 }
@@ -439,4 +440,5 @@ footer .component{
     font: 100 1.5em/2em 'Roboto', 'Noto Sans KR', sans-serif;
     letter-spacing: 1px;
     margin-top: 3%;
+    color: #eee;
 }
