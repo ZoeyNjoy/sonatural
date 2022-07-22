@@ -120,9 +120,6 @@ main .aside{
 .aside li:first-child{
     margin-right: 0;
 }
-.aside iframe{
-    height: 200px;
-}
 .aside a{
     width: 98%;
     font: 100 3.5em/3em 'Roboto', 'Noto Sans KR', sans-serif;    
