@@ -8,6 +8,7 @@ body{font-size: .7vw;}
 
 header{
     width: 100%;
+    max-width: 1300px;
 }
 header .title{
     width: 75%;
@@ -133,6 +134,7 @@ nav a{
     width: 100%;
     position: absolute;
     color: inherit;
+    overflow: hidden;
 }
 .slide .txt{
     position: absolute;

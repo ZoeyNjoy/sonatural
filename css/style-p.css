@@ -145,13 +145,13 @@ footer .community{
     width: 100%;
 }
 .cs p:nth-child(1){
-    font: 400 5em/2em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 4em/2em 'Roboto', 'Noto Sans KR', sans-serif;
 }
 .cs p:nth-child(2),
 .cs p:nth-child(3){
     float: left;
-    font: 400 8em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
-    margin-right: 15%;
+    font: 400 5em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
+    margin-right: 25%;
 }
 .cs p:nth-child(4){
     clear: both;
@@ -163,7 +163,7 @@ footer .community{
     width: 20%;
 }
 .cs p:nth-child(4) span:nth-child(3){
-    margin-left: 13%;
+    margin-left: 12%;
 }
 
 .community .noti{
