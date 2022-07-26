@@ -1,3 +1,4 @@
+body{font-size: 1vw;}
 header{
     width: 100%;
     margin: auto;
@@ -31,7 +32,7 @@ header .st0{
 .title .lnb{
     width: 50%;
     display: none;
-    margin-top: 150%;
+    margin-top: 120%;
 }
 .lnb li{
     width: 33.3%;
@@ -40,7 +41,7 @@ header .st0{
     display: none;
 }
 .lnb a{
-    font: 400 5em/3em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 2.5em/5em 'Roboto', 'Noto Sans KR', sans-serif;
 }
 .lnb li:hover a{
     font-weight: bolder;
@@ -105,7 +106,7 @@ nav .gnb ul{
 nav .gnb li{
     width: 100%;
     text-transform: uppercase;
-    font: 400 6em/4em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 700 3.5em/4em 'Roboto', 'Noto Sans KR', sans-serif;
     position: relative;
     z-index: 11;
 }
@@ -117,12 +118,7 @@ nav .gnb li::before,
 nav .gnb li:hover::before{
     display: none;
 }
-nav .gnb li:hover a{
-    font-size: 1.3em;
-    transition: all .3s ease-in-out;
-}
 nav .sub{display: none;}
-
 
 
 
@@ -135,17 +131,23 @@ nav .sub{display: none;}
     max-width: 100%;
     display: block;
 }
+.slide a:nth-child(1) img{
+    margin-left: 5%;
+}
+.slide a:nth-child(4) img{
+    margin-left: 25%;
+}
 .slide .txt{
     position: absolute;
     top: 50%;
-    left: 15%;
+    left: 10%;
     transform: translateY(-50%);
 }
 .txt p:nth-child(1){
-    font: 400 5em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 3.5em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
 }
 .txt p:nth-child(2){
-    font: 100 3em/2em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 100 2em/2em 'Roboto', 'Noto Sans KR', sans-serif;
 }
 
 
@@ -170,20 +172,20 @@ nav .sub{display: none;}
     display: none;
 }
 .contents .sub_title{
-    font: 400 4em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 100 3em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
     color: #ccc;
 }
 .contents .title{
-    font: 400 5em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 4em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
 }
 .contents .price{
-    font: 400 4em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 3.5em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
 }
 .row1 .badge{
     width: 3em;
     height: 3em;
     border-radius: 50%;
-    font: 400 4em/3em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 3em/3em 'Roboto', 'Noto Sans KR', sans-serif;
     text-align: center;
     text-transform: uppercase;
 }
@@ -206,15 +208,15 @@ main .event{
     left: 5%;
 }
 .event .sub_title{
-    font: 400 4em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 100 2.5em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
     color: #888;
 }
 .event .title{
-    font: 400 5em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 4em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
 }
 .event p:nth-child(3){
     margin-top: 10%;
-    font: 400 3em/2em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 2.5em/2em 'Roboto', 'Noto Sans KR', sans-serif;
 }
 
 main .aside{
@@ -267,17 +269,17 @@ footer .community{
     width: 100%;
 }
 .cs p:nth-child(1){
-    font: 400 4em/2em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 3.5em/2em 'Roboto', 'Noto Sans KR', sans-serif;
 }
 .cs p:nth-child(2),
 .cs p:nth-child(3){
     float: left;
-    font: 400 5em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 4em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
     margin-right: 25%;
 }
 .cs p:nth-child(4){
     clear: both;
-    font: 100 3em/2em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 100 2em/5em 'Roboto', 'Noto Sans KR', sans-serif;
     margin-bottom: 5%;
 }
 .cs p:nth-child(4) span{
@@ -333,7 +335,7 @@ footer .community{
 }
 .info li{
     color: #eee;
-    font: 100 0.1em 'Roboto', 'Noto Sans KR', sans-serif;        
+    font: 100 1em/5em 'Roboto', 'Noto Sans KR', sans-serif;        
 }
 .info a{
     color: #eee;
@@ -348,6 +350,6 @@ footer .community{
     margin: auto;
     font: 100 1.5em/2em 'Roboto', 'Noto Sans KR', sans-serif;
     letter-spacing: 1px;
-    margin-top: 3%;
+    margin-top: 5%;
     color: #eee;
 }

@@ -243,11 +243,11 @@ main .best{
     color:#333;
 }
 .contents .sub_title{
-    font: 400 1.1em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 1.2em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
     color: #ccc;
 }
 .contents .title{
-    font: 400 1.4em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 1.5em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
     
 }
 .contents .price{
@@ -273,7 +273,7 @@ main .best{
     border: 1px solid #ddd;
     background-color: #fff;
     position: absolute;
-    top: 20%;
+    top: 15%;
     color: #aaa;
     margin-top: 5%;
 }
@@ -307,11 +307,11 @@ main .event{
     left: 2%;
 }
 .event .sub_title{
-    font: 400 1.1em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 1.3em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
     color: #888;
 }
 .event .title{
-    font: 400 1.5em/2em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 2em/2em 'Roboto', 'Noto Sans KR', sans-serif;
     letter-spacing: -1px;
 }
 .event p:nth-child(3){
@@ -371,7 +371,7 @@ footer{
     margin-top: 5%;
 }
 footer .community{
-    width: 100%;
+    width: 90%;
     max-width: 1300px;
     margin: auto;
     display: flex;
