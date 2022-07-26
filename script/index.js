@@ -30,15 +30,24 @@ if(ww>850){
             $(this).hide();
         }
     });
+    $('.event').bxSlider({
+        display:none
+      });
 }else if(ww<850){
     $('header svg').click(function(){
         $('nav').append().css('visibility','visible');
-        $('.title .lnb').show();
+        $('.title .lnb, .search, .cart').show();
     });
     $('nav').click(function(){
         $('nav').append().css('visibility','hidden');
-        $('.title .lnb').hide();
+        $('.title .lnb, .search, .cart').hide();
     });
+    $('.event ul').bxSlider({
+        mode: 'fade',
+        captions: true,
+        auto: true
+      });
+    
 };
 
 
