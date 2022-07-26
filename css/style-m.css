@@ -222,6 +222,7 @@ main .event{
 main .aside{
     width: 100%;
 }
+
 .aside p:nth-child(1){
     padding-left: 5%;
     font: 400 5em/2em 'Roboto', 'Noto Sans KR', sans-serif;
@@ -229,23 +230,29 @@ main .aside{
 .aside ul{
     width: 100%;
     flex-wrap: wrap;
-    margin-top: 3%;
+    margin-top: -25%;
+}
+.aside ul::before{
+    display: none;
 }
 .aside li{
     width: 100%;
-    margin-bottom: 3%;
+    height: auto;
+    margin-bottom: 10%;
+}
+.aside li::before{
+    content: '';
+    display: block;
+    padding-top: 25%;
+}
+.aside li:first-child{
+    margin-right: 0%;
 }
 .aside li:last-child{
     margin-bottom: 0%;
 }
 .aside li p:first-child{
     font: 100 3.5em/2em 'Roboto', 'Noto Sans KR', sans-serif;    
-}
-.aside li:first-child{
-    margin-right: 0;
-}
-.aside iframe{
-    height: 200px;
 }
 .aside a{
     width: 98%;
@@ -256,7 +263,7 @@ main .aside{
 footer{
     width: 100%;
     border-top: 1px solid #ddd;
-    margin-top: 5%;
+    margin-top: 30%;
 }
 footer .community{
     width: 90%;

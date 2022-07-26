@@ -338,17 +338,28 @@ main .aside{
     justify-content: space-between;
     margin-top: 1%;
 }
+.aside ul::before{
+    content: '';
+    display: block;
+    margin-top: 30%;
+}
 .aside li{
     width: 50%;
 }
 .aside li p:first-child{
     font: 100 2em/2em 'Roboto', 'Noto Sans KR', sans-serif;    
 }
+.aside li p:last-child{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
 .aside li:first-child{
     margin-right: 1%;
 }
 .aside iframe{
     width: 100%;
+    height: 100%;
 }
 .aside a{
     display: block;
