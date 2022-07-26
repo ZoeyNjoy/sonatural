@@ -23,6 +23,9 @@
     text-align: center;
     text-transform: uppercase;
 }
+.badge:nth-of-type(2){
+    top: 15%;
+}
 
 
 .event .sub_title{

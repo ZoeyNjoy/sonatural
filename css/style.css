@@ -258,7 +258,7 @@ main .best{
     width: 3em;
     height: 3em;
     border-radius: 50%;
-    font: 400 1.5em/3em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 1.2em/3em 'Roboto', 'Noto Sans KR', sans-serif;
     text-align: center;
     text-transform: uppercase;
 }
@@ -266,7 +266,7 @@ main .best{
     background-color: #333;
     border: 1px solid #333;
     position: absolute;
-    top: 1%;
+    top: 0;
     color: #ddd;
 }
 .badge:nth-of-type(2){
