@@ -10,8 +10,13 @@
   -ms-touch-action: pan-y;
   touch-action: pan-y;
 }
+/* .bx-wrapper::before{
+  content: '';
+  display: block;
+  margin-top: 50%;
+} */
 .bx-wrapper img {
-  max-width: 100%;
+  max-width: 60%;
   display: block;
 }
 .bxslider {
