@@ -14,14 +14,10 @@ $('.slide a').eq(3).css('backgroundColor','#d8e7be');
 // menu
 var ww=$(window).width();
 if(ww>850){
-    $('nav .gnb li').on({
-        mouseenter: function() {
-            $(this).parents().find('.sub').show();
-        },
-        mouseleave: function() { 
-            $(this).parents().find('.sub').hide();
-        }
+    $('nav .gnb li').on('mouseenter', function() {
+        $(this).parents().find('.sub').show();
     });
+    $('nav .gnb li').off('mouseleave');
     $('nav .sub').on({
         mouseenter: function() {
             $(this).show();
