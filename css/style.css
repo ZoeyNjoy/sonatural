@@ -123,7 +123,7 @@ nav{
 nav::before{
     content: '';
     display: block;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 nav .bg-shadow{display: none;}
 nav .gnb ul{
@@ -254,8 +254,8 @@ main .best{
 }
 .contents .row1,
 .contents .row2{
-    width: 80%;
-    margin: 20px auto;
+    width: 90%;
+    margin: 15px auto;
 }
 .row1 ul,
 .row2 ul{
@@ -311,7 +311,6 @@ main .best{
     margin-top: 5%;
 }
 
-
 main .event{
     width: 100%;
     margin-top: 100px;
@@ -344,7 +343,7 @@ main .event{
     color: #888;
 }
 .event .title{
-    font: 400 2em/2em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 1.7em/2em 'Roboto', 'Noto Sans KR', sans-serif;
     letter-spacing: -1px;
 }
 .event p:nth-child(3){
@@ -354,7 +353,7 @@ main .event{
 
 
 main .aside{
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 .aside::before{

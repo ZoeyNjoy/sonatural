@@ -4,7 +4,7 @@ $('.slide').bxSlider({
     auto: true
   });
 
-$('.slide a').eq(0).css('backgroundColor','#fad3d2');
+$('.slide a').eq(0).css('backgroundColor','#aee4e9');
 $('.slide a').eq(1).css('backgroundColor','#f5f2e7');
 $('.slide a').eq(2).css('backgroundColor','#ebe4dc');
 $('.slide a').eq(3).css('backgroundColor','#d8e7be');
