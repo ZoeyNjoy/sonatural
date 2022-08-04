@@ -24,12 +24,12 @@ body{font-size: .7vw;}
     padding: 7%;
     box-sizing: border-box;
     background-color: #fff;
-    font: 400 2em/2em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 1.7em/2em 'Roboto', 'Noto Sans KR', sans-serif;
 }
 .cau .box h2{
     margin-bottom: 20px;
 }
-.cau .box .btn{
+.cau .box input{
     position: absolute;
     bottom: 30px;
     right: 30px;
