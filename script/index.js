@@ -1,54 +1,62 @@
-$('.slide').bxSlider({
-    mode: 'fade',
-    captions: true,
-    auto: true
-  });
-
-$('.slide a').eq(0).css('backgroundColor','#aee4e9');
-$('.slide a').eq(1).css('backgroundColor','#f5f2e7');
-$('.slide a').eq(2).css('backgroundColor','#ebe4dc');
-$('.slide a').eq(3).css('backgroundColor','#d8e7be');
-
+// 공지사항 
 $('.cau .box .btn').on('click',function(){
     $('.cau').hide();
 });
 
+// 메인 슬라이드
+var swiper = new Swiper('.slide', {
+    spaceBetween: 0,
+    centeredSlides: true,
+    loop: true,
+    speed : 1000,
+    autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  });
 
 
-// menu
-var ww=$(window).width();
-if(ww>850){
-    $('nav .gnb li').on('mouseenter', function() {
-        $(this).parents().find('.sub').show();
-    });
-    $('nav .gnb li').off('mouseleave');
-    $('nav .sub').on({
-        mouseenter: function() {
-            $(this).show();
-        },
-        mouseleave: function() { 
-            $(this).hide();
-        }
-    });
-    $('.event').bxSlider({
-        display:none
-      });
-}else if(ww<850){
-    $('header svg').click(function(){
-        $('nav').append().css('visibility','visible');
-        $('.title .lnb, .search, .cart').show();
-    });
-    $('nav').click(function(){
-        $('nav').append().css('visibility','hidden');
-        $('.title .lnb, .search, .cart').hide();
-    });
-    $('.event ul').bxSlider({
-        mode: 'fade',
-        captions: true,
-        auto: true
-      });
-    
-};
+// PC용 메뉴바
+$('nav li').on('mouseenter', function() {
+  $(this).parents().find('.sub').show();
+});
+$('nav li').off('mouseleave');
+$('nav .sub').on({
+  mouseenter: function() {
+      $(this).show();
+  },
+  mouseleave: function() { 
+      $(this).hide();
+  }
+});
+
+ //모바일 메뉴바
+var burger = $('.m_bar');
+burger.each(function(index){
+  var $this = $(this);
+  
+  $this.on('click', function(e){
+    e.preventDefault();
+    $(this).toggleClass('active-1');
+  })
+});
+
+$("header .m_bar").on('click', function () {
+    $('.m_nav nav').toggleClass('on');
+  });
+$(".sub").on('click', function () {
+    $(this).next().slideToggle();
+  });  
+$(".depth_02 li a").on('click', function () {
+    $(this).next().slideToggle();
+  });
+  // $('.s_btn').click(function(){
+
+  // });
 
 
 

@@ -3,7 +3,7 @@
 *{  margin: 0; padding: 0;}
 ul{ list-style: none;}
 a{  text-decoration: none;}
-body{font-size: .7vw;}
+body{font-size: 1vw;}
 .cau{
     width: 100%;
     height: 100%;
@@ -24,7 +24,7 @@ body{font-size: .7vw;}
     padding: 7%;
     box-sizing: border-box;
     background-color: #fff;
-    font: 400 1.7em/2em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 1rem/2rem 'Roboto', 'Noto Sans KR', sans-serif;
 }
 .cau .box h2{
     margin-bottom: 20px;
@@ -36,22 +36,25 @@ body{font-size: .7vw;}
     background-color: transparent;
     border: none;
     cursor: pointer;
-    font: 400 1.2em/1em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 1rem/1rem 'Roboto', 'Noto Sans KR', sans-serif;
 }
 header{
     width: 100%;
-    max-width: 1300px;
+    max-width: 1480px;
     margin: auto;
 }
-header svg{display: none;}
+.m_nav{display: none}
+header .m_bar{display: none;}
 header .title{
     width: 100%;
     position: relative;
 }
 
 .title .logo{
-    width: 15%;
-    margin: auto;
+    position: relative;
+    width:150px;
+    margin: 30px auto;
+    z-index: 10;
 }
 .title .lnb{
     width: 35%;
@@ -69,126 +72,88 @@ header .title{
 }
 .lnb a{
     color: #333;
-    font: 400 1.3em/2.5em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 1rem/2rem 'Roboto', 'Noto Sans KR', sans-serif;
 }
-.title .cart{
-    position: absolute;
-    right: 0;
-    top: 65%;
-    transform: translateY(-50%);
-    width: 3%;
-}
-.title .search{
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    width: 20%;
-    height: 35%;
-}
-.title #search{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 95%;
-    height: 70%;
-    padding: 0 10px 0 10px;
-    border: none;
-    border-bottom: 1px solid #333;
-}
-#search:focus{outline: none;}
-#search::-webkit-search-cancel-button{display: none;}
-.search .s_btn{
-    width: 15%;
-    height: 55%;
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    transform: translateY(-50%);
-    z-index: 1;
-    background: url(../images/search.svg) center/cover;
-    border: none;
-}
-
-
 /* nav */
-nav{
+header nav{
     width: 100%;
+    position: relative;
     background-color: #fff;
-    z-index: 10;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0px;
     padding-bottom: 3px;
+    z-index: 10;
 }
-nav::before{
-    content: '';
-    display: block;
-    margin-top: 3%;
+header nav.fixed{
+    z-index: 10;
+    position: fixed;
+    top: 0px;
 }
 nav .bg-shadow{display: none;}
-nav .gnb ul{
-    width: 75%;
-    max-width: 1300px;
+nav ul{
+    width: 100%;
     margin: auto;
-    text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-nav .gnb li{
-    width: 13%;
+nav li{
+    width: 20%;
+    text-align: center;
     text-transform: uppercase;
-    font: bold 1.5em/4em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: bold 1.2rem/3rem 'Roboto', 'Noto Sans KR', sans-serif;
     position: relative;
 }
-nav .gnb .color a{
+nav .color a{
     color: #ff004e;
 }
-nav .gnb a{
+nav a{
     color: #333;
 }
-nav .gnb li::before{
+nav li::before{
     content: '';
     position: absolute;
     bottom: -2px;
-    left: 0;
-    width: 100%;
+    left: 25%;
+    width: 50%;
     height: 10%;
     background: #aaa;
     transform: scaleX(0);
 }
-nav .gnb li:hover::before{
+nav li:not(.sub li):hover::before{
     transform: scaleX(1);
     transition: all .3s;
 }
-nav .sub{display: none;}
+nav .sub{
+    display: none;
+}
 nav .sub ul{
     width: 100%;
     position: absolute;
     background:rgba(255, 255, 255, 0.9);
     display: flex;
-    justify-content: center;
-    padding: 2% 0 2% 5%;
+    justify-content: flex-start;
     box-sizing: border-box;
     border-bottom: 1px solid #eee;
-    margin-top: 2px;
+    padding: 20px 0;
 }
 .sub li{
     width: 20%;
-    font: 400 1.5em/1em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 1rem/1rem 'Roboto', 'Noto Sans KR', sans-serif;
 }
 .sub a{
     display: block;
-    color: inherit;}
+    color: inherit;
+}
 .sub dl{
     width: 100%;
     margin-top: 5%;
-    font: 100 1em/2em 'Roboto', 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+    font: 100 1rem/2rem 'Roboto', 'Noto Sans KR', sans-serif;
 }
 .sub dt,
 .sub dd{
-    width: 50%;
-    padding-left: 5px;
+    text-align: left;
+    width: 60%;
+    margin-left: 40%;
 }
 .sub .color a{
     color: #ff004e;
@@ -196,48 +161,109 @@ nav .sub ul{
 .sub li:hover{
     font-weight: 700;
 }
-.sub dt:hover,
-.sub dd:hover{
+.sub dt:hover a,
+.sub dd:hover a{
+    width: 100%;
     border-left: 5px solid #c7dea4;
-    margin-left: -5px;
+    margin-left: -10px;
+    padding-left: 5px;
+}
+nav .nav_right{
+    position: absolute;
+    top: -60px;
+    right: 0;
+    width: 350px;
+    height: 40px;
+}
+.nav_right .cart{
+    width: 35px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+nav #search{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 85%;
+    height: 100%;
+    padding: 0 10px 0 10px;
+    border: none;
+    border-bottom: 1px solid #333;
+}
+#search:focus{outline: none;}
+#search::-webkit-search-cancel-button{display: none;}
+.nav_right .s_btn{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background: url(../images/search.svg) center/cover;
+    border: none;
 }
 
+
 /* 슬라이드 */
-.slide_wrap{
+.slide{
+    width: 100%;
+    z-index: -1;
+    margin-bottom: 100px;
+}
+.swiper-wrapper .swiper-slide{
+    width: 100%;
+}
+.swiper-slide a{
+    display: block;
     width: 100%;
     position: relative;
-    z-index: 1;
+    color: initial;
 }
-.slide_wrap .slide{
-    width: 100%;
-    display: flex;
-    position: relative;
-}
-.slide a{
-    width: 100%;
-    position: absolute;
-    color: inherit;
-    overflow: hidden;
-}
-.slide .txt{
+.swiper-wrapper .txt{
     position: absolute;
     top: 50%;
     left: 15%;
     transform: translateY(-50%);
 }
 .txt p:nth-child(1){
-    font: 400 3.5em/1.2em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 800 2rem/2.5rem 'Roboto', 'Noto Sans KR', sans-serif;
 }
 .txt p:nth-child(2){
-    font: 100 2em/1.2em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 100 1.5rem/3rem 'Roboto', 'Noto Sans KR', sans-serif;
 }
-.slide a img{
-    width: 100%;
+.swiper-wrapper a img{
+    width: 70%;
     margin: auto;
     margin-right: 10%;
     display: block;
 }
-
+.swiper-button-next{
+    top:0;
+    right: 0;
+    margin: 0;
+    width: 50%;
+    height: 100%;
+}
+.swiper-button-prev{
+    top:0;
+    left: 0;
+    margin: 0;
+    width: 50%;
+    height: 100%;
+}
+.swiper-button-next:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.swiper-button-prev:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    content: '';
+}
 
 /* 메인페이지 */
 main{
@@ -255,7 +281,7 @@ main .best{
 .contents .row1,
 .contents .row2{
     width: 90%;
-    margin: 15px auto;
+    margin: 100px auto;
 }
 .row1 ul,
 .row2 ul{
@@ -276,22 +302,22 @@ main .best{
     color:#333;
 }
 .contents .sub_title{
-    font: 400 1.2em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 1rem/2rem 'Roboto', 'Noto Sans KR', sans-serif;
     color: #ccc;
 }
 .contents .title{
-    font: 400 1.5em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 1.2rem/1.5rem 'Roboto', 'Noto Sans KR', sans-serif;
     
 }
 .contents .price{
-    font: 400 1.3em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 1.2rem/2rem 'Roboto', 'Noto Sans KR', sans-serif;
 }
 .row1 .badge,
 .row2 .badge{
-    width: 3em;
-    height: 3em;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    font: 400 1.2em/3em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 1rem/50px 'Roboto', 'Noto Sans KR', sans-serif;
     text-align: center;
     text-transform: uppercase;
 }
@@ -339,16 +365,16 @@ main .event{
     left: 2%;
 }
 .event .sub_title{
-    font: 400 1.3em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 1rem/1.5rem 'Roboto', 'Noto Sans KR', sans-serif;
     color: #888;
 }
 .event .title{
-    font: 400 1.7em/2em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 1.2rem/2rem 'Roboto', 'Noto Sans KR', sans-serif;
     letter-spacing: -1px;
 }
 .event p:nth-child(3){
     margin-top: 10%;
-    font: 400 1em/2em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 1rem/2rem 'Roboto', 'Noto Sans KR', sans-serif;
 }
 
 
@@ -362,7 +388,7 @@ main .aside{
     margin-top: 5%;
 }
 .aside p{
-    font: 400 2.5em/2em 'Roboto', 'Noto Sans KR', sans-serif;    
+    font: 400 1.5rem/2rem 'Roboto', 'Noto Sans KR', sans-serif;    
 }
 .aside ul{
     width: 100%;
@@ -379,7 +405,7 @@ main .aside{
     width: 50%;
 }
 .aside li p:first-child{
-    font: 100 2em/2em 'Roboto', 'Noto Sans KR', sans-serif;    
+    font: 100 1.2rem/2rem 'Roboto', 'Noto Sans KR', sans-serif;    
 }
 .aside li p:last-child{
     width: 100%;
@@ -398,7 +424,7 @@ main .aside{
     width: 100%;
     text-align: right;
     color: inherit;
-    font: 100 2em/1em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 100 1.5rem/1rem 'Roboto', 'Noto Sans KR', sans-serif;
     transition: all .3s ease-in-out; 
 }
 .aside a:hover{
@@ -424,15 +450,15 @@ footer .community{
     width: 30%;
 }
 .cs p:nth-child(1){
-    font: 400 2em/2em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 1.5rem/3rem 'Roboto', 'Noto Sans KR', sans-serif;
 }
 .cs p:nth-child(2),
 .cs p:nth-child(3){
-    font: 400 2.5em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 1.5rem/1.5rem 'Roboto', 'Noto Sans KR', sans-serif;
 }
 .cs p:nth-child(4){
     margin-top: 5%;
-    font: 100 1.5em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 100 1rem/1.5rem 'Roboto', 'Noto Sans KR', sans-serif;
     display: flex;
     flex-wrap: wrap;
 }
@@ -447,10 +473,10 @@ footer .community{
     width: 100%;
 }
 .noti p:nth-child(1){
-    font: 400 2em/2em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 1.5rem/3rem 'Roboto', 'Noto Sans KR', sans-serif;
 }
 .noti li{
-    font: 100 1.5em/1.5em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 100 1rem/1.5rem 'Roboto', 'Noto Sans KR', sans-serif;
     display: flex;
 }
 .noti li span{
@@ -477,7 +503,7 @@ footer .community{
     width: 40%;
 }
 .benefit li p{
-    font: 100 1.3em/2em 'Roboto', 'Noto Sans KR', sans-serif;    
+    font: 100 1rem/1.5rem 'Roboto', 'Noto Sans KR', sans-serif;    
 }
 footer .component{
     width: 100%;
@@ -487,7 +513,7 @@ footer .component{
     box-sizing: border-box;
 }
 .support ul{
-    width: 40%;
+    width: 55%;
     display: flex;
     justify-content: space-between;
 }
@@ -517,7 +543,7 @@ footer .component{
 }
 .support li a{
     color: #eee;
-    font: 100 1.5em/2em 'Roboto', 'Noto Sans KR', sans-serif;    
+    font: 100 1rem/1.5rem 'Roboto', 'Noto Sans KR', sans-serif;    
 }
 .info ul{
     width: 100%;
@@ -525,7 +551,7 @@ footer .component{
 }
 .info li{
     color: #eee;
-    font: 100 1.5em/2em 'Roboto', 'Noto Sans KR', sans-serif;        
+    font: 100 1rem/2rem 'Roboto', 'Noto Sans KR', sans-serif;        
 }
 .info a{
     color: #eee;
@@ -538,7 +564,7 @@ footer .component{
 .component .copy{
     width: 100%;
     margin: auto;
-    font: 100 1.5em/2em 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 100 1rem/2rem 'Roboto', 'Noto Sans KR', sans-serif;
     letter-spacing: 1px;
     margin-top: 3%;
     color: #eee;

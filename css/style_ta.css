@@ -1,0 +1,89 @@
+.lnb a{
+    font: 400 .9rem/2.5rem 'Roboto', 'Noto Sans KR', sans-serif;
+}
+nav li{
+    font: bold 1rem/3rem 'Roboto', 'Noto Sans KR', sans-serif;
+    position: relative;
+}
+nav .nav_right{
+    position: absolute;
+    top: -60px;
+    right: 0;
+    width: 300px;
+    height: 40px;
+}
+.sub dt,
+.sub dd{
+    text-align: left;
+    width: 70%;
+    padding-left: 0%;
+}
+
+
+.swiper-wrapper a img{
+    width: 100%;
+    margin: auto;
+    margin-right: 0;
+    display: block;
+}
+.swiper-wrapper .txt{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+.txt p:nth-child(1){
+    font: 800 1.5rem/2rem 'Roboto', 'Noto Sans KR', sans-serif;
+}
+.txt p:nth-child(2){
+    font: 100 1.5rem/3rem 'Roboto', 'Noto Sans KR', sans-serif;
+}
+
+
+.row1 .badge,
+.row2 .badge{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font: 400 .9rem/40px 'Roboto', 'Noto Sans KR', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/* footer */
+.cs p:nth-child(1){
+    font: 400 1.2rem/3rem 'Roboto', 'Noto Sans KR', sans-serif;
+}
+.cs p:nth-child(2),
+.cs p:nth-child(3){
+    font: 400 1.2rem/1.5rem 'Roboto', 'Noto Sans KR', sans-serif;
+}
+.cs p:nth-child(4){
+    margin-top: 5%;
+    font: 100 1rem/1.5rem 'Roboto', 'Noto Sans KR', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+.noti p:nth-child(1){
+    font: 400 1.2rem/3rem 'Roboto', 'Noto Sans KR', sans-serif;
+}
+.noti li{
+    font: 100 1rem/2rem 'Roboto', 'Noto Sans KR', sans-serif;
+}
+.benefit li p{
+    font: 100 .8rem/1.5rem 'Roboto', 'Noto Sans KR', sans-serif;    
+}
+.support ul{
+    width: 60%;
+}
+.support li a{
+    font: 100 .9rem/1.5rem 'Roboto', 'Noto Sans KR', sans-serif;    
+}
+.info li{
+    color: #eee;
+    font: 100 .8rem/2rem 'Roboto', 'Noto Sans KR', sans-serif;        
+}
+.component .copy{
+    font: 100 .9rem/2rem 'Roboto', 'Noto Sans KR', sans-serif;
+}

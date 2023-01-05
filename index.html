@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>so natural</title>
     <script src="./script/jquery-1.12.3.js"></script>
-    <script src="./script/jquery.bxslider.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./script/cook.js" defer></script>
     <script src="./script/index.js" defer></script>
-    <link rel="stylesheet" href="./css/jquery.bxslider.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/style-1200.css" media="all and (max-width:1200px) and (min-width:850px)">
-    <link rel="stylesheet" href="./css/style-m.css" media="all and (max-width:850px)">
+    <link rel="stylesheet" href="./css/style_ta.css" media="all and (max-width:1024px) and (min-width:768px)">
+    <link rel="stylesheet" href="./css/style_m.css" media="all and (max-width:768px)">
 </head>
 <body>
 <div class="cau">
@@ -23,15 +23,116 @@
     </div>
 </div>
     <header>
-        <svg viewBox="0 0 100 100">
-        	<line class="st0" x1="10" y1="50" x2="90" y2="50"/>
-        	<line class="st0" x1="10" y1="24.54" x2="90" y2="24.54"/>
-        	<line class="st0" x1="10" y1="75.46" x2="90" y2="75.46"/>
-        </svg>
         <div class="title">
             <div class="logo">
                 <a href="#"><img src="./images/logo.svg" alt="로고"></a>
             </div>
+            <nav>
+                <ul class="nav">
+                    <li><a href="#">shopping</a></li>
+                    <li><a href="#">new & best</a></li>
+                    <li class="color"><a href="#">hot deal</a></li>
+                    <li><a href="#">community</a></li>
+                    <li><a href="#">brand</a></li>
+                </ul>
+                <div class="sub">
+                    <ul>
+                        <li>
+                            <a href="#">전제품</a>
+                        </li>
+                        <li>
+                            <a href="#">브랜드별</a>
+                            <dl>
+                                <dt>
+                                    <a href="#">쏘내추럴</a>
+                                </dt>
+                                <dd>
+                                    <a href="#">쏘비건</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">파우더4룸</a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <a href="#">기능별</a>
+                            <dl>
+                                <dt class="color">
+                                    <a href="#">FIXX/픽서</a>
+                                </dt>
+                                <dd>
+                                    <a href="#">클렌지/필링</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">패드/마스크</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">토너/미스트</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">세럼/엠플</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">아이/크림</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">남성케어</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">메이크업/선케어</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">바디/헤어</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">스페셜케어</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">뷰티소품</a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <a href="#">피부고민별</a>
+                            <dl>
+                                <dt>
+                                    <a href="#">클린뷰티비건</a>
+                                </dt>
+                                <dd>
+                                    <a href="#">오일 테라피</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">트러블/진정</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">모공/피지/각질</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">보습/틴력</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">수분/미백</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">내추럴 메이크업</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">바디/헤어</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">뷰티소품</a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="nav_right">
+                    <button class="s_btn"></button>
+                    <input type="search" name="search" id="search" placeholder="검색어를 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='검색어를 입력하세요.'">
+                    <img src="./images/cart.svg" alt="장바구니" class="cart">
+                </div>
+            </nav>
             <div class="lnb">
                 <ul>
                     <li><a href="#">로그인</a></li>
@@ -40,118 +141,137 @@
                     <li><a href="#">마이페이지</a></li>
                 </ul>
             </div>
-            <img src="./images/cart.svg" alt="장바구니" class="cart">
-            <div class="search">
-                <button class="s_btn"></button>
-                <input type="search" name="search" id="search" placeholder="검색어를 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='검색어를 입력하세요.'">
+        </div>
+        <div class="m_nav">
+            <div class="logo">
+                <a href="#"><img src="./images/logo.svg" alt="로고"></a>
             </div>
+            <a class="m_bar" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">shopping</a>
+                        <ul class="depth_02">
+                            <li>
+                                <a href="#">전제품</a>
+                            </li>
+                            <li>
+                                <a href="#" class="under">브랜드별</a>
+                                <dl>
+                                    <dt>
+                                        <a href="#">쏘내추럴</a>
+                                    </dt>
+                                    <dd>
+                                        <a href="#">쏘비건</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">파우더4룸</a>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <a href="#" class="under">기능별</a>
+                                <dl>
+                                    <dt class="color">
+                                        <a href="#">FIXX/픽서</a>
+                                    </dt>
+                                    <dd>
+                                        <a href="#">클렌지/필링</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">패드/마스크</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">토너/미스트</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">세럼/엠플</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">아이/크림</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">남성케어</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">메이크업/선케어</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">바디/헤어</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">스페셜케어</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">뷰티소품</a>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <a href="#" class="under">피부고민별</a>
+                                <dl>
+                                    <dt>
+                                        <a href="#">클린뷰티비건</a>
+                                    </dt>
+                                    <dd>
+                                        <a href="#">오일 테라피</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">트러블/진정</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">모공/피지/각질</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">보습/틴력</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">수분/미백</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">내추럴 메이크업</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">바디/헤어</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">뷰티소품</a>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">new & best</a></li>
+                    <li><a href="#">hot deal</a></li>
+                    <li><a href="#">community</a></li>
+                    <li><a href="#">brand</a></li>
+                </ul>
+                <div class="nav_right">
+                    <button class="s_btn"></button>
+                    <input type="search" name="search" id="search" placeholder="검색어를 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='검색어를 입력하세요.'">
+                </div>
+                <div class="lnb">
+                    <ul>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">주문조회</a></li>
+                        <li><a href="#">마이페이지</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="cart">
+                    <img src="./images/cart.svg" alt="장바구니">
+                </a>
+            </nav>
         </div>
     </header>
-    <nav>
-        <div class="nav-bg"></div>
-        <div class="gnb">
-            <ul>
-                <li><a href="#">shopping</a></li>
-                <li><a href="#">new & best</a></li>
-                <li class="color"><a href="#">hot deal</a></li>
-                <li><a href="#">community</a></li>
-                <li><a href="#">brand</a></li>
-            </ul>
-        </div>
-        <div class="sub">
-            <ul>
-                <li>
-                    <a href="#">전제품</a>
-                </li>
-                <li>
-                    <a href="#">브랜드별</a>
-                    <dl>
-                        <dt>
-                            <a href="#">쏘내추럴</a>
-                        </dt>
-                        <dd>
-                            <a href="#">쏘비건</a>
-                        </dd>
-                        <dd>
-                            <a href="#">파우더4룸</a>
-                        </dd>
-                    </dl>
-                </li>
-                <li>
-                    <a href="#">기능별</a>
-                    <dl>
-                        <dt class="color">
-                            <a href="#">FIXX/픽서</a>
-                        </dt>
-                        <dd>
-                            <a href="#">클렌지/필링</a>
-                        </dd>
-                        <dd>
-                            <a href="#">패드/마스크</a>
-                        </dd>
-                        <dd>
-                            <a href="#">토너/미스트</a>
-                        </dd>
-                        <dd>
-                            <a href="#">세럼/엠플</a>
-                        </dd>
-                        <dd>
-                            <a href="#">아이/크림</a>
-                        </dd>
-                        <dd>
-                            <a href="#">남성케어</a>
-                        </dd>
-                        <dd>
-                            <a href="#">메이크업/선케어</a>
-                        </dd>
-                        <dd>
-                            <a href="#">바디/헤어</a>
-                        </dd>
-                        <dd>
-                            <a href="#">스페셜케어</a>
-                        </dd>
-                        <dd>
-                            <a href="#">뷰티소품</a>
-                        </dd>
-                    </dl>
-                </li>
-                <li>
-                    <a href="#">피부고민별</a>
-                    <dl>
-                        <dt>
-                            <a href="#">클린뷰티비건</a>
-                        </dt>
-                        <dd>
-                            <a href="#">오일 테라피</a>
-                        </dd>
-                        <dd>
-                            <a href="#">트러블/진정</a>
-                        </dd>
-                        <dd>
-                            <a href="#">모공/피지/각질</a>
-                        </dd>
-                        <dd>
-                            <a href="#">보습/틴력</a>
-                        </dd>
-                        <dd>
-                            <a href="#">수분/미백</a>
-                        </dd>
-                        <dd>
-                            <a href="#">내추럴 메이크업</a>
-                        </dd>
-                        <dd>
-                            <a href="#">바디/헤어</a>
-                        </dd>
-                        <dd>
-                            <a href="#">뷰티소품</a>
-                        </dd>
-                    </dl>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="slide_wrap">
-        <div class="slide">
+    <div class="swiper slide">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-color: #aee4e9;">
             <a href="#">
                 <div class="txt">
                     <p>
@@ -162,37 +282,47 @@
                 </div>
                 <img src="./images/slide06.png" alt="슬라이드">
             </a>
-            <a href="#">
-                <div class="txt">
-                    <p>
-                        성난 피부엔 응급진정<br>
-                        어성식초스틱
-                    </p>
-                    <p>하트리프 비니거 멀티 카밍스틱</p>
-                </div>
-                <img src="./images/slide02.png" alt="슬라이드">
-            </a>
-            <a href="#">
-                <div class="txt">
-                    <p>
-                        매끈한 피부바탕<br>
-                        쫀득 모짜 클로우 쿠션
-                    </p>
-                    <p>모즈 픽스 쿠션 세미 글로우</p>
-                </div>
-                <img src="./images/slide03.png" alt="슬라이드">
-            </a>
-            <a href="#">
-                <div class="txt">
-                    <p>
-                        오돌토돌 집중 케어 <br>
-                        여드름성 피부 진정패드
-                    </p>
-                    <p>어석식초 카밍 패드</p>
-                </div>
-                <img src="./images/slide04.png" alt="슬라이드">
-            </a>
         </div>
+        <div class="swiper-slide" style="background-color: #f5f2e7;">
+          <a href="#">
+                    <div class="txt">
+                        <p>
+                            성난 피부엔 응급진정<br>
+                            어성식초스틱
+                        </p>
+                        <p>하트리프 비니거 멀티 카밍스틱</p>
+                    </div>
+                    <img src="./images/slide02.png" alt="슬라이드">
+          </a>
+        </div>
+        <div class="swiper-slide" style="background-color: #ebe4dc;">
+          <a href="#">
+                    <div class="txt">
+                        <p>
+                            매끈한 피부바탕<br>
+                            쫀득 모짜 클로우 쿠션
+                        </p>
+                        <p>모즈 픽스 쿠션 세미 글로우</p>
+                    </div>
+                    <img src="./images/slide03.png" alt="슬라이드">
+          </a>
+        </div>
+        <div class="swiper-slide" style="background-color: #d8e7be;">
+          <a href="#">
+              <div class="txt">
+                  <p>
+                      오돌토돌 집중 케어 <br>
+                      여드름성 피부 진정패드
+                  </p>
+                  <p>어석식초 카밍 패드</p>
+              </div>
+              <img src="./images/slide04.png" alt="슬라이드">
+          </a>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
     <main>
         <div class="best">
