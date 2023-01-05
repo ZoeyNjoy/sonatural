@@ -47,6 +47,7 @@ burger.each(function(index){
 
 $("header .m_bar").on('click', function () {
     $('.m_nav nav').toggleClass('on');
+    $('.m_nav .logo').toggleClass('move');
   });
 $(".sub").on('click', function () {
     $(this).next().slideToggle();
