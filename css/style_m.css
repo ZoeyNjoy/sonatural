@@ -133,6 +133,7 @@ nav li::before{
     width: 30px;
     height: 30px;
     margin-right: 10px;
+    border: 1px solid red;
 }
 .m_nav .nav_right .cart img{
     width: 100%;
