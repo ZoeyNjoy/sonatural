@@ -62,12 +62,12 @@ header .m_bar{
     height: 100%;
 }
 .m_nav .logo{
-    width: 90px;
+    width: 80px;
     margin: 10px auto;
 }
 .m_nav .logo.move{
     position: absolute;
-    left: 10%;
+    left: 20%;
 }
 .m_nav nav{
     width: 50%;
