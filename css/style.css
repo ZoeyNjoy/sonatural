@@ -264,6 +264,10 @@ nav #search{
 .swiper-button-prev::after{
     content: '';
 }
+.swiper-pagination-bullet{
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
 
 /* 메인페이지 */
 main{
