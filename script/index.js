@@ -12,10 +12,14 @@ var swiper = new Swiper('.slide', {
     autoplay: {
     delay: 3000,
     disableOnInteraction: false,
+    allowTouchMove: true,
     },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: ".swiper-pagination",
     }
   });
 
