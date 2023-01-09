@@ -398,6 +398,8 @@ main .event{
 }
 .event .event_slide{
     width: 100%;
+    margin-left: -25%;
+    overflow:visible;
 }
 .event_slide .swiper-wrapper{
     width: 100%;

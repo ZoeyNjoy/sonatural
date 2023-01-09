@@ -1,6 +1,7 @@
 body{font-size: 1vw;}
 header{
     width: 100%;
+    height: 80px;
     margin: auto;
     background-color: white;
     position: fixed;
@@ -239,6 +240,11 @@ nav li::before{
 
 
 /* 메인페이지 이벤트 */
+.event .event_slide{
+    width: 100%;
+    margin-left: 0%;
+    overflow:hidden;
+}
 .event_slide .swiper-wrapper{
     width: 100%;
     display: flex;
