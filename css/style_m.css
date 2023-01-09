@@ -240,6 +240,11 @@ nav li::before{
 
 
 /* 메인페이지 이벤트 */
+main .event{
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
 .event .event_slide{
     width: 100%;
     margin-left: 0%;
@@ -261,11 +266,11 @@ nav li::before{
     left: 2%;
 }
 .event_slide .swiper-slide .sub_title{
-    font: 300 1rem/1.5rem 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 400 1rem/1.5rem 'Roboto', 'Noto Sans KR', sans-serif;
     color: #888;
 }
 .event_slide .swiper-slide .title{
-    font: 400 1.8rem/3rem 'Roboto', 'Noto Sans KR', sans-serif;
+    font: 500 1.5rem/3rem 'Roboto', 'Noto Sans KR', sans-serif;
     letter-spacing: -1px;
 }
 .event_slide .swiper-slide p:nth-child(3){

@@ -36,22 +36,18 @@ var swiper = new Swiper('.slide', {
 
 
 // PC용 메뉴바
-/* $('nav li').on('mouseenter', function() {
-  $(this).parents().find('.sub').show();
+$('nav .sub').on('mouseover', function() {
+  $(this).parents().find('.snb').show('on');
 });
-$('nav li').off('mouseleave');
-$('nav .sub').on({
-  mouseenter: function() {
-      $(this).show();
-  },
-  mouseleave: function() { 
-      $(this).hide();
-  }
-});*/
-
-$(".nav li .sub").on('mousemove', function () {
-  $(this).next().find('.snb').toggleClass('on');
+$('nav .sub:not(li)').on('mouseout', function() {
+  $(this).parents().find('.snb').hide('off');
 });
+// $('nav .sub').off('mouseleave', function() {
+//   $(this).parents().find('.snb').hide();
+// });
+// $('nav .snb').on('mousemove', function () {
+//   $(this).next().find('.snb').slideToggle();
+// });
 
  //모바일 메뉴바
 var burger = $('.m_bar');
