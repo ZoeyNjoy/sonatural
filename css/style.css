@@ -39,22 +39,32 @@ body{font-size: 1vw;}
     font: 400 1rem/1rem 'Roboto', 'Noto Sans KR', sans-serif;
 }
 header{
+    position: relative;
     width: 100%;
-    max-width: 1480px;
-    margin: auto;
+    height: auto;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
 }
 .m_nav{display: none}
 header .m_bar{display: none;}
 header .title{
     width: 100%;
+    max-width: 1480px;
+    margin: auto;
     position: relative;
+    transition: all .3s;
 }
-
 .title .logo{
-    position: relative;
-    width:150px;
+    width: 120px;
     margin: 30px auto;
     z-index: 10;
+}
+.logo a{
+    display: block;
+}
+.logo img{
+    width: 100%;
+    object-fit: contain;
 }
 .title .lnb{
     width: 35%;
@@ -78,25 +88,19 @@ header .title{
 header nav{
     width: 100%;
     position: relative;
-    background-color: #fff;
     padding-bottom: 3px;
     z-index: 10;
+    transition: all .3s;
 }
-header nav.fixed{
-    z-index: 10;
-    position: fixed;
-    top: 0px;
-}
-nav .bg-shadow{display: none;}
 nav ul{
     width: 100%;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
 }
 nav li{
-    width: 20%;
+    width: 100%;
     text-align: center;
     text-transform: uppercase;
     font: bold 1.2rem/3rem 'Roboto', 'Noto Sans KR', sans-serif;
@@ -118,51 +122,52 @@ nav li::before{
     background: #aaa;
     transform: scaleX(0);
 }
-nav li:not(.sub li):hover::before{
+nav li:not(.snb li):hover::before{
     transform: scaleX(1);
     transition: all .3s;
 }
-nav .sub{
+nav .snb{
+    position: absolute;
+    width: 100%;
     display: none;
 }
-nav .sub ul{
+nav .snb ul{
     width: 100%;
     position: absolute;
     background:rgba(255, 255, 255, 0.9);
     display: flex;
     justify-content: flex-start;
     box-sizing: border-box;
-    border-bottom: 1px solid #eee;
     padding: 20px 0;
 }
-.sub li{
+.snb li{
     width: 20%;
     font: 400 1rem/1rem 'Roboto', 'Noto Sans KR', sans-serif;
 }
-.sub a{
+.snb a{
     display: block;
     color: inherit;
 }
-.sub dl{
+.snb dl{
     width: 100%;
     margin-top: 5%;
     box-sizing: border-box;
     font: 100 1rem/2rem 'Roboto', 'Noto Sans KR', sans-serif;
 }
-.sub dt,
-.sub dd{
+.snb dt,
+.snb dd{
     text-align: left;
     width: 60%;
     margin-left: 40%;
 }
-.sub .color a{
+.snb .color a{
     color: #ff004e;
 }
-.sub li:hover{
+.snb li:hover{
     font-weight: 700;
 }
-.sub dt:hover a,
-.sub dd:hover a{
+.snb dt:hover a,
+.snb dd:hover a{
     width: 100%;
     border-left: 5px solid #c7dea4;
     margin-left: -10px;
@@ -206,6 +211,50 @@ nav #search{
     border: none;
 }
 
+/* 헤더 픽스드 */
+header.fixed{
+    width: 100%;
+    height: 80px;
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all .3s;
+}
+header.fixed .title .logo{
+    width: 60px;
+    margin: 15px 25px;
+    z-index: 10;
+    animation: left .1s;
+}
+header.fixed .lnb{
+    display: none;
+}
+@keyframes left{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+header.fixed .title nav{
+    width: 80%;
+    height: 80px;
+    z-index: 5;
+    position: fixed;
+    top: 15px;
+    right: 5%;
+    background-color: none;
+    padding: 0;
+}
+header.fixed .nav_right{
+    display: none;
+}
+
+
+
+
 
 /* 슬라이드 */
 .slide{
@@ -213,58 +262,58 @@ nav #search{
     z-index: -1;
     margin-bottom: 100px;
 }
-.swiper-wrapper .swiper-slide{
+.slide .swiper-wrapper .swiper-slide{
     width: 100%;
 }
-.swiper-slide a{
+.slide .swiper-slide a{
     display: block;
     width: 100%;
     position: relative;
     color: initial;
 }
-.swiper-wrapper .txt{
+.slide .swiper-wrapper .txt{
     position: absolute;
     top: 50%;
     left: 15%;
     transform: translateY(-50%);
 }
-.txt p:nth-child(1){
+.slide .txt p:nth-child(1){
     font: 800 2rem/2.5rem 'Roboto', 'Noto Sans KR', sans-serif;
 }
-.txt p:nth-child(2){
+.slide .txt p:nth-child(2){
     font: 100 1.5rem/3rem 'Roboto', 'Noto Sans KR', sans-serif;
 }
-.swiper-wrapper a img{
+.slide .swiper-wrapper a img{
     width: 70%;
     margin: auto;
     margin-right: 10%;
     display: block;
 }
-.swiper-button-next{
+.slide .swiper-button-next{
     top:0;
     right: 0;
     margin: 0;
     width: 50%;
     height: 100%;
 }
-.swiper-button-prev{
+.slide .swiper-button-prev{
     top:0;
     left: 0;
     margin: 0;
     width: 50%;
     height: 100%;
 }
-.swiper-button-next:hover{
+.slide .swiper-button-next:hover{
     background-color: rgba(255, 255, 255, 0.3);
 }
-.swiper-button-prev:hover{
+.slide .swiper-button-prev:hover{
     background-color: rgba(0, 0, 0, 0.05);
 }
-.swiper-button-next::after,
-.swiper-button-prev::after{
+.slide .swiper-button-next::after,
+.slide .swiper-button-prev::after{
     content: '';
 }
-.swiper-pagination-bullet{
+.slide .swiper-pagination-bullet{
     background-color: #fff;
     border: 1px solid #ddd;
 }
@@ -305,7 +354,7 @@ main .best{
 .row2 a{
     color:#333;
 }
-.contents .sub_title{
+.contents .snb_title{
     font: 400 1rem/2rem 'Roboto', 'Noto Sans KR', sans-serif;
     color: #ccc;
 }
@@ -341,44 +390,51 @@ main .best{
     margin-top: 5%;
 }
 
+
+/* 메인페이지 이벤트 */
 main .event{
     width: 100%;
     margin-top: 100px;
-    z-index: 1;
 }
-.event ul{
+.event .event_slide{
+    width: 100%;
+}
+.event_slide .swiper-wrapper{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
-.event li{
+.event_slide .swiper-slide{
     width: 50%;
-    position: relative;
 }
-.event img{
-    width: 100%;
-    height: 100%;
-}
-.event a{
+.event_slide .swiper-slide a{
+    display: block;
     color: inherit;
 }
-.event .text{
+.event_slide .swiper-slide a img{
+    width: 100%;
+    object-fit: cover;
+}
+.event_slide .swiper-slide .text{
     width: 45%;
     position: absolute;
     top: 5%;
     left: 2%;
 }
-.event .sub_title{
+.event_slide .swiper-slide .sub_title{
     font: 400 1rem/1.5rem 'Roboto', 'Noto Sans KR', sans-serif;
     color: #888;
 }
-.event .title{
+.event_slide .swiper-slide .title{
     font: 400 1.2rem/2rem 'Roboto', 'Noto Sans KR', sans-serif;
     letter-spacing: -1px;
 }
-.event p:nth-child(3){
+.event_slide .swiper-slide p:nth-child(3){
     margin-top: 10%;
     font: 400 1rem/2rem 'Roboto', 'Noto Sans KR', sans-serif;
+}
+.event_slide .swiper-pagination-bullet{
+    display: none;
 }
 
 
