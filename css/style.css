@@ -52,7 +52,6 @@ header .title{
     max-width: 1480px;
     margin: auto;
     position: relative;
-    transition: all .3s;
 }
 .title .logo{
     width: 120px;
@@ -104,41 +103,23 @@ nav li{
     text-align: center;
     text-transform: uppercase;
     font: bold 1.2rem/3rem 'Roboto', 'Noto Sans KR', sans-serif;
-    position: relative;
+    /* border: 1px solid red; */
 }
 nav .color a{
     color: #ff004e;
 }
-nav a{
+nav li a{
+    display: block;
     color: #333;
-}
-nav li::before{
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 25%;
-    width: 50%;
-    height: 10%;
-    background: #aaa;
-    transform: scaleX(0);
-}
-nav li:not(.snb li):hover::before{
-    transform: scaleX(1);
     transition: all .3s;
 }
 nav .snb{
     position: absolute;
-    bottom: 0;
+    top: 50px;
     left: 0;
     width: 100%;
     display: none;
-    transition: all .3s;
-}
-nav .snb.on{
-    transition: all .3s;
-}
-nav .snb.off{
-    transition: all .3s;
+    transition: all 1s;
 }
 nav .snb ul{
     width: 100%;
@@ -248,20 +229,27 @@ header.fixed .lnb{
     }
 }
 header.fixed .title nav{
-    width: 80%;
+    width: 100%;
     height: 80px;
     z-index: 5;
     position: fixed;
     top: 15px;
-    right: 5%;
+    right: 0;
     background-color: none;
     padding: 0;
+    padding-left: 150px;
+    box-sizing: border-box;
 }
 header.fixed .nav_right{
     display: none;
 }
-
-
+header.fixed .snb{
+    position: fixed;
+    top: 80px;
+}
+header.fixed .snb ul{
+    padding-left: 120px;
+}
 
 
 
