@@ -240,7 +240,6 @@ nav li::before{
 }
 .row1 .badge:nth-of-type(2){
     margin-top: 20px;
-    border: 1px solid red;
 }
 
 
